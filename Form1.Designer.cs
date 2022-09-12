@@ -46,30 +46,35 @@
             this.textControl1.ButtonBar = this.buttonBar1;
             this.textControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textControl1.Font = new System.Drawing.Font("Arial", 10F);
-            this.textControl1.Location = new System.Drawing.Point(25, 77);
+            this.textControl1.FormattingPrinter = "Standard";
+            this.textControl1.Location = new System.Drawing.Point(38, 117);
+            this.textControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textControl1.Name = "textControl1";
             this.textControl1.RulerBar = this.rulerBar2;
-            this.textControl1.Size = new System.Drawing.Size(894, 380);
+            this.textControl1.Size = new System.Drawing.Size(1340, 585);
             this.textControl1.StatusBar = this.statusBar1;
             this.textControl1.TabIndex = 0;
+            this.textControl1.UserNames = null;
             this.textControl1.VerticalRulerBar = this.rulerBar1;
             // 
             // buttonBar1
             // 
             this.buttonBar1.BackColor = System.Drawing.SystemColors.Control;
             this.buttonBar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonBar1.Location = new System.Drawing.Point(0, 24);
+            this.buttonBar1.Location = new System.Drawing.Point(0, 35);
+            this.buttonBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonBar1.Name = "buttonBar1";
-            this.buttonBar1.Size = new System.Drawing.Size(919, 28);
+            this.buttonBar1.Size = new System.Drawing.Size(1378, 44);
             this.buttonBar1.TabIndex = 1;
             this.buttonBar1.Text = "buttonBar1";
             // 
             // rulerBar2
             // 
             this.rulerBar2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rulerBar2.Location = new System.Drawing.Point(0, 52);
+            this.rulerBar2.Location = new System.Drawing.Point(0, 79);
+            this.rulerBar2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rulerBar2.Name = "rulerBar2";
-            this.rulerBar2.Size = new System.Drawing.Size(919, 25);
+            this.rulerBar2.Size = new System.Drawing.Size(1378, 38);
             this.rulerBar2.TabIndex = 4;
             this.rulerBar2.Text = "rulerBar2";
             // 
@@ -77,34 +82,42 @@
             // 
             this.statusBar1.BackColor = System.Drawing.SystemColors.Control;
             this.statusBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.statusBar1.Location = new System.Drawing.Point(0, 457);
+            this.statusBar1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.statusBar1.Location = new System.Drawing.Point(0, 702);
+            this.statusBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.statusBar1.Name = "statusBar1";
-            this.statusBar1.Size = new System.Drawing.Size(919, 22);
+            this.statusBar1.Size = new System.Drawing.Size(1378, 35);
             this.statusBar1.TabIndex = 2;
             // 
             // rulerBar1
             // 
             this.rulerBar1.Alignment = TXTextControl.RulerBarAlignment.Left;
             this.rulerBar1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.rulerBar1.Location = new System.Drawing.Point(0, 77);
+            this.rulerBar1.Location = new System.Drawing.Point(0, 117);
+            this.rulerBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rulerBar1.Name = "rulerBar1";
-            this.rulerBar1.Size = new System.Drawing.Size(25, 380);
+            this.rulerBar1.Size = new System.Drawing.Size(38, 585);
             this.rulerBar1.TabIndex = 3;
             this.rulerBar1.Text = "rulerBar1";
             // 
             // mailMerge1
             // 
-            this.mailMerge1.TemplateFile = "template.doc";
+            this.mailMerge1.DataSourceCulture = new System.Globalization.CultureInfo("en-US");
+            this.mailMerge1.DateFieldUtcOffset = null;
+            this.mailMerge1.MergeCulture = new System.Globalization.CultureInfo("en-US");
+            this.mailMerge1.TemplateFile = "C:\\Users\\ZuzannaK\\Documents\\github\\TextControl.MailMerge.CheckBoxes\\template.tx";
             this.mailMerge1.TextComponent = this.textControl1;
             this.mailMerge1.DataRowMerged += new TXTextControl.DocumentServer.MailMerge.DataRowMergedHandler(this.mailMerge1_DataRowMerged);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mailMergeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(919, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1378, 35);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -113,21 +126,21 @@
             this.mailMergeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mergeToolStripMenuItem});
             this.mailMergeToolStripMenuItem.Name = "mailMergeToolStripMenuItem";
-            this.mailMergeToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.mailMergeToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
             this.mailMergeToolStripMenuItem.Text = "MailMerge";
             // 
             // mergeToolStripMenuItem
             // 
             this.mergeToolStripMenuItem.Name = "mergeToolStripMenuItem";
-            this.mergeToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.mergeToolStripMenuItem.Size = new System.Drawing.Size(165, 34);
             this.mergeToolStripMenuItem.Text = "Merge";
             this.mergeToolStripMenuItem.Click += new System.EventHandler(this.mergeToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 479);
+            this.ClientSize = new System.Drawing.Size(1378, 737);
             this.Controls.Add(this.textControl1);
             this.Controls.Add(this.rulerBar1);
             this.Controls.Add(this.rulerBar2);
@@ -135,6 +148,7 @@
             this.Controls.Add(this.statusBar1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Text Control MailMerge: Merge CheckBoxes";
             this.menuStrip1.ResumeLayout(false);

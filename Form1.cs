@@ -43,11 +43,11 @@ namespace tx_checkbox_mailmerge
 
                 foreach (IFormattedText textPart in tx.TextParts)
                 {
-                    foreach (ApplicationField appField in textPart.ApplicationFields)
+                    foreach (FormField appField in textPart.FormFields)
                     {
-                        if (appField.TypeName == "FORMCHECKBOX")
+                        if (appField is CheckFormField)
                         {
-                            FormCheckBox checkbox = new FormCheckBox(appField);
+                            CheckFormField checkbox = (CheckFormField)appField;
 
                             if(dataRow.Table.Columns[checkbox.Name] != null)
                                 checkbox.Checked = Convert.ToBoolean(dataRow[checkbox.Name]);
